@@ -10,18 +10,23 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom right, #e9e9e9, #f4f4f4);
+            background: #e9e9e9; /* Gri arka plan */
             color: #333;
         }
         header {
-            background: #ff2d00; /* Kırmızı */
+            background: #00B2E2; /* Mavi */
             color: #fff;
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+        .logo {
+            width: 150px; /* Logo genişliği */
+            height: auto; /* Yükseklik otomatik */
+            margin-bottom: 10px; /* Logo ile başlık arasındaki boşluk */
+        }
         nav {
-            background: #009e2a; /* Yeşil */
+            background: #E52B1B; /* Kırmızı */
             padding: 15px 0;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -45,12 +50,11 @@
             padding: 20px;
         }
         section {
-            background: white;
             margin: 20px 0;
             border-radius: 8px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             padding: 20px;
             transition: transform 0.3s;
+            border: 2px solid #009E2A; /* Yeşil */
         }
         section:hover {
             transform: translateY(-2px);
@@ -58,7 +62,7 @@
         footer {
             text-align: center;
             padding: 15px 0;
-            background: #ff2d00; /* Kırmızı */
+            background: #E52B1B; /* Kırmızı */
             color: white;
             position: relative;
             bottom: 0;
@@ -70,7 +74,7 @@
             font-size: 2.5em;
         }
         h2 {
-            color: #009e2a; /* Yeşil */
+            color: #009E2A; /* Yeşil */
             border-bottom: 2px solid #ffcc00; /* Sarı */
             padding-bottom: 5px;
         }
@@ -91,7 +95,7 @@
             max-width: 400px;
         }
         .hero {
-            background: url('path/to/your/background-image.jpg') no-repeat center center/cover;
+            background: linear-gradient(to right, #00B2E2, #E52B1B, #009E2A); /* Azerbaycan Bayrağı renkleri */
             height: 300px;
             color: white;
             display: flex;
@@ -114,7 +118,7 @@
         }
         .cta-button {
             display: inline-block;
-            background: #009e2a; /* Yeşil */
+            background: #009E2A; /* Yeşil */
             color: #fff;
             padding: 10px 20px;
             border-radius: 5px;
@@ -129,6 +133,7 @@
 <body>
 
 <header>
+    <img src="path/to/logo.png" alt="Azerbaycan Karabağlılar Derneği Logo" class="logo">
     <h1>Azerbaycan Karabağlılar Derneği</h1>
 </header>
 
@@ -203,7 +208,7 @@
         <div class="card">
             <p>Bize ulaşmak için aşağıdaki bilgileri kullanabilirsiniz:</p>
             <ul>
-                <li><strong>Adres:</strong> Azerbaycan Karabağlılar Derneği, [Dernek adresi]</li>
+                <li><strong>Adres:</strong> Azerbaycan Karabağlılar Derneği, [Adresinizi buraya ekleyin]</li>
                 <li><strong>Telefon:</strong> [Dernek telefon numarası]</li>
                 <li><strong>Email:</strong> [Dernek e-postası]</li>
                 <li><strong>Sosyal Medya:</strong> [Sosyal medya bağlantıları]</li>
