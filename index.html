@@ -95,10 +95,17 @@
             color: #008000;
         }
         audio {
-            display: block;
-            margin: 20px auto;
+            display: none;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = new Audio('Karabakh_Azerbaijan(_2U3eIMAyLqc_).m4a');
+            document.body.addEventListener('click', () => {
+                audio.play();
+            }, { once: true });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -136,10 +143,6 @@
             <p>Hər hansı bir sualınız və ya təklifiniz varsa, bizə yazmaqdan çəkinməyin!</p>
         </section>
     </div>
-    <audio autoplay loop>
-        <source src="Karabakh_Azerbaijan(_2U3eIMAyLqc_).m4a" type="audio/mp4">
-        Brauzeriniz səs faylını dəstəkləmir.
-    </audio>
     <footer>
         <p>&copy; 2025 Azerbaycan Qarabağlılar Dərnəyi. Bütün hüquqlar qorunur.</p>
         <p>"Birliyimiz gücümüzdür!"</p>
