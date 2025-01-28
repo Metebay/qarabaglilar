@@ -10,7 +10,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom right, #f4f4f4, #e9e9e9);
+            background: linear-gradient(to bottom right, #e9e9e9, #f4f4f4);
             color: #333;
         }
         header {
@@ -32,9 +32,12 @@
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
+            padding: 10px 15px;
+            border-radius: 5px;
         }
         nav a:hover {
-            color: #ffcc00; /* Sarı */
+            background: #ffcc00; /* Sarı */
+            color: #333;
         }
         .container {
             max-width: 1200px;
@@ -47,6 +50,10 @@
             border-radius: 8px;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             padding: 20px;
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: translateY(-2px);
         }
         footer {
             text-align: center;
@@ -94,6 +101,29 @@
             border-radius: 8px;
             margin: 20px 0;
         }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button {
+            display: inline-block;
+            background: #009e2a; /* Yeşil */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #007b24; /* Koyu Yeşil */
+        }
     </style>
 </head>
 <body>
@@ -118,75 +148,87 @@
 
     <section id="ana-sayfa">
         <h2>Tu Bi Xêr Hatî!</h2>
-        <p>Derneka Karabağlıya Azerbaycanê, kesên ku ji herêma Karabağê hatine, bi hev re hatin ku binketina çandî, civakî û aborî xwe bikişînin. Armancê me ew e ku çanda Karabağê jî xweş bikin û pêdiviyên endamên civakî yên me hilbijêrin. Derneka me, bi çalakiyan û projeyan re çanda zengîn a Karabağê pêşve dike.</p>
+        <div class="card">
+            <p>Derneka Karabağlıya Azerbaycanê, kesên ku ji herêma Karabağê hatine, bi hev re hatin ku binketina çandî, civakî û aborî xwe bikişînin. Armancê me ew e ku çanda Karabağê jî xweş bikin û pêdiviyên endamên civakî yên me hilbijêrin. Derneka me, bi çalakiyan û projeyan re çanda zengîn a Karabağê pêşve dike.</p>
+        </div>
     </section>
 
     <section id="hakkimizda">
         <h2>Li ser me</h2>
-        <p>Derneka me di sala 2020-an de hate damezrandin. Armancê me ew e ku nirxên dîrokî û çandî yên herêma Karabağê parastin, civakî di hev re zêde bikin û pêdiviyên endamên me berdewam bikin. Derneka me, bi çalakiyan, seminaran û projeyan re çanda Karabağê tanînin û piştgirî bikin.</p>
-        <h3>Armanca Me</h3>
-        <p class="highlight">Çanda Karabağê û gelanên wî bi kêmasî bike.</p>
-        <h3>Vîzyona Me</h3>
-        <p class="highlight">Çand û zengînî yên herêma Karabağê di nav cîhan de nas bikin.</p>
+        <div class="card">
+            <p>Derneka me di sala 2020-an de hate damezrandin. Armancê me ew e ku nirxên dîrokî û çandî yên herêma Karabağê parastin, civakî di hev re zêde bikin û pêdiviyên endamên me berdewam bikin. Derneka me, bi çalakiyan, seminaran û projeyan re çanda Karabağê tanînin û piştgirî bikin.</p>
+            <h3>Armanca Me</h3>
+            <p class="highlight">Çanda Karabağê û gelanên wî bi kêmasî bike.</p>
+            <h3>Vîzyona Me</h3>
+            <p class="highlight">Çand û zengînî yên herêma Karabağê di nav cîhan de nas bikin.</p>
+        </div>
     </section>
 
     <section id="etkinlikler">
         <h2>Çalakiyan</h2>
-        <p>Derneka me her sal çalakiyan cuda-cuda pêşkêş dike. Di vê çalakiyan de hene:</p>
-        <ul>
-            <li><strong>Rojên Çandî:</strong> Çanda Karabağê tanîn.</li>
-            <li><strong>Konseran:</strong> Muzîka Azerbaycanê pêşkêş kirin.</li>
-            <li><strong>Sergeran:</strong> Xelatên hunermendên Karabağê.</li>
-            <li><strong>Seminaran:</strong> Dîrok û çanda Karabağê li ser xebat.</li>
-        </ul>
-        <p>Ji bo hînbûna çalakiyên nû, kerema xwe <a href="#">li vir çalakiyên me bînî</a>.</p>
+        <div class="card">
+            <p>Derneka me her sal çalakiyan cuda-cuda pêşkêş dike. Di vê çalakiyan de hene:</p>
+            <ul>
+                <li><strong>Rojên Çandî:</strong> Çanda Karabağê tanîn.</li>
+                <li><strong>Konseran:</strong> Muzîka Azerbaycanê pêşkêş kirin.</li>
+                <li><strong>Sergeran:</strong> Xelatên hunermendên Karabağê.</li>
+                <li><strong>Seminaran:</strong> Dîrok û çanda Karabağê li ser xebat.</li>
+            </ul>
+            <p>Ji bo hînbûna çalakiyên nû, kerema xwe <a class="cta-button" href="#">li vir çalakiyên me bînî</a>.</p>
+        </div>
     </section>
 
     <section id="uyelik">
         <h2>Endam</h2>
-        <p>Kesên ku dixwazin bi derneka me ve girêdayin, şertên endamê me ne:</p>
-        <ul>
-            <li>Mezinbûna 18 salî</li>
-            <li>Ji herêma Azerbaycanê an jî çanda Karabağê hez bikin</li>
-            <li>Rêzimanê derneka me qebûl bikin</li>
-        </ul>
-        <h3>Faydanên Endamê</h3>
-        <p>Faydanên ku em pêşkêş dikin:</p>
-        <ul>
-            <li>Çalakiyan xweş bikin</li>
-            <li>Agahdariyên parve bikin</li>
-            <li>Bi civakî têkiliya xwe bikişînin</li>
-        </ul>
-        <p><a href="#">Forma endamiyê li vir dîtin.</a></p>
+        <div class="card">
+            <p>Kesên ku dixwazin bi derneka me ve girêdayin, şertên endamê me ne:</p>
+            <ul>
+                <li>Mezinbûna 18 salî</li>
+                <li>Ji herêma Azerbaycanê an jî çanda Karabağê hez bikin</li>
+                <li>Rêzimanê derneka me qebûl bikin</li>
+            </ul>
+            <h3>Faydanên Endamê</h3>
+            <p>Faydanên ku em pêşkêş dikin:</p>
+            <ul>
+                <li>Çalakiyan xweş bikin</li>
+                <li>Agahdariyên parve bikin</li>
+                <li>Bi civakî têkiliya xwe bikişînin</li>
+            </ul>
+            <p><a class="cta-button" href="#">Forma endamiyê li vir dîtin.</a></p>
+        </div>
     </section>
 
     <section id="iletisim">
         <h2>Têkiliyê</h2>
-        <p>Ji bo têkilî da bi me re, ev agahiyên jêrîn bikar bînin:</p>
-        <ul>
-            <li><strong>Navnîşan:</strong> Derneka Karabağlıya Azerbaycanê, [Navnîşana derneka]</li>
-            <li><strong>Telefon:</strong> [Hejmara telefonê derneka]</li>
-            <li><strong>Email:</strong> [Emailê derneka]</li>
-            <li><strong>Medya Sosyal:</strong> [Girêdanên medya sosyal]</li>
-        </ul>
+        <div class="card">
+            <p>Ji bo têkilî da bi me re, ev agahiyên jêrîn bikar bînin:</p>
+            <ul>
+                <li><strong>Navnîşan:</strong> Derneka Karabağlıya Azerbaycanê, [Navnîşana derneka]</li>
+                <li><strong>Telefon:</strong> [Hejmara telefonê derneka]</li>
+                <li><strong>Email:</strong> [Emailê derneka]</li>
+                <li><strong>Medya Sosyal:</strong> [Girêdanên medya sosyal]</li>
+            </ul>
+        </div>
     </section>
 
     <section id="blog">
         <h2>Blog</h2>
-        <p>Li vir hûn dikarin nivîsarên ku derbarê çalakiyan, nûçeyan û çanda Karabağê ne bibînin.</p>
-        <h3>Çîrokên Nû</h3>
-        <ul>
-            <li><a href="#">Gelekî Zêde Li Ser Çanda Karabağê</a></li>
-            <li><a href="#">Gelûbûnê Muzîka Azerbaycanê</a></li>
-            <li><a href="#">Xwarinên Karabağê û Reçeteyên Wî</a></li>
-        </ul>
+        <div class="card">
+            <p>Li vir hûn dikarin nivîsarên ku derbarê çalakiyan, nûçeyan û çanda Karabağê ne bibînin.</p>
+            <h3>Çîrokên Nû</h3>
+            <ul>
+                <li><a href="#">Gelekî Zêde Li Ser Çanda Karabağê</a></li>
+                <li><a href="#">Gelûbûnê Muzîka Azerbaycanê</a></li>
+                <li><a href="#">Xwarinên Karabağê û Reçeteyên Wî</a></li>
+            </ul>
+        </div>
     </section>
     
     <!-- Arka planda müzik çalma bölümü -->
     <section id="music">
         <h2>Muzîk</h2>
         <audio controls autoplay loop>
-            <source src="music.mp3" type="audio/mpeg">
+            <source src="path/to/your/music.mp3" type="audio/mpeg">
             Tarayıcınız ses dosyasını desteklemiyor.
         </audio>
         <p>Muzîka xweş bike!</p>
