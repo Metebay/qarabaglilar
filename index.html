@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azerbaycan Karabağlılar Derneği</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Montserrat fontu eklendi -->
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Montserrat', sans-serif; /* Montserrat fontu kullanıldı */
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: #e9e9e9; /* Gri arka plan */
+            background: #f4f4f4; /* Gri arka plan */
             color: #333;
         }
         header {
-            background: #f0f0f0; /* Açık gri */
-            color: #333;
+            background: #00B2E2; /* Azerbaycan mavi rengi */
+            color: #fff;
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -36,9 +37,9 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
             padding: 10px 15px;
             border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
         }
         nav a:hover {
             background: #ffcc00; /* Sarı */
@@ -54,7 +55,8 @@
             border-radius: 8px;
             padding: 20px;
             transition: transform 0.3s;
-            border: 2px solid #009E2A; /* Yeşil */
+            background-color: #fff; /* Beyaz arka plan */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         section:hover {
             transform: translateY(-2px);
@@ -72,11 +74,13 @@
         h1 {
             margin: 0;
             font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
         h2 {
             color: #009E2A; /* Yeşil */
             border-bottom: 2px solid #ffcc00; /* Sarı */
             padding-bottom: 5px;
+            margin-bottom: 15px;
         }
         ul {
             list-style-type: disc;
@@ -88,33 +92,16 @@
             border-radius: 5px;
             margin: 10px 0;
         }
-        audio {
-            display: block;
-            margin: 20px auto;
-            width: 100%;
-            max-width: 400px;
-        }
-        .hero {
-            background: linear-gradient(to right, #00B2E2, #E52B1B, #009E2A); /* Azerbaycan Bayrağı renkleri */
-            height: 300px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            border-radius: 8px;
-            margin: 20px 0;
-        }
         .card {
             border: 1px solid #ddd;
             border-radius: 8px;
             margin: 10px 0;
-            padding: 15px;
-            background-color: #f9f9f9;
+            padding: 20px;
+            background-color: #f9f9f9; /* Açık gri arka plan */
             transition: box-shadow 0.3s;
         }
         .card:hover {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
         .cta-button {
             display: inline-block;
@@ -128,12 +115,24 @@
         .cta-button:hover {
             background: #007b24; /* Koyu Yeşil */
         }
+        /* Responsive tasarım */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            nav {
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="dernekLogo.db2b14d536e1f59a9f0087ec3ed7fc1c.svg" alt="Azerbaycan Karabağlılar Derneği Logo" class="logo">
+    <img src="path/to/logo.png" alt="Azerbaycan Karabağlılar Derneği Logo" class="logo">
     <h1>Azerbaycan Karabağlılar Derneği</h1>
 </header>
 
@@ -186,16 +185,10 @@
     <section id="uyelik">
         <h2>Üyelik</h2>
         <div class="card">
-            <p>Derneğimize katılmak isteyenlerin uyması gereken şartlar:</p>
+            <p>Derneğimize üye olarak aşağıdaki avantajlardan faydalanabilirsiniz:</p>
             <ul>
-                <li>18 yaşından büyük olmak</li>
-                <li>Azerbaycan ve Karabağ kültürüne ilgi duymak</li>
-                <li>Derneğin kurallarına uymak</li>
-            </ul>
-            <h3>Üyelik Faydaları</h3>
-            <p>Üyelerimize sağlanan faydalar:</p>
-            <ul>
-                <li>Etkinliklere katılma imkanı</li>
+                <li>Karabağ kültürü ile ilgili bilgilere erişim</li>
+                <li>Etkinliklerimize katılma fırsatı</li>
                 <li>Bilgilendirmelerden yararlanma</li>
                 <li>Toplumsal ilişkilerin güçlenmesi</li>
             </ul>
@@ -227,16 +220,6 @@
                 <li><a href="#">Karabağ Mutfağından Tarifler</a></li>
             </ul>
         </div>
-    </section>
-    
-    <!-- Arka planda müzik çalma bölümü -->
-    <section id="music">
-        <h2>Müzik</h2>
-        <audio controls autoplay loop>
-            <source src="path/to/your/music.mp3" type="audio/mpeg">
-            Tarayıcınız ses dosyasını desteklemiyor.
-        </audio>
-        <p>Keyifli dinlemeler!</p>
     </section>
 </div>
 
