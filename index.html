@@ -14,38 +14,44 @@
             color: #333;
         }
         header {
-            background: #007bff;
+            background: #ff2d00; /* Kırmızı */
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         nav {
-            margin: 10px 0;
+            background: #009e2a; /* Yeşil */
+            padding: 15px 0;
             text-align: center;
         }
         nav a {
             margin: 0 15px;
-            color: #007bff;
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff2d00; /* Kırmızı */
         }
         section {
             padding: 20px;
             background: #fff;
             margin: 10px;
             border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
             padding: 10px 0;
-            background: #007bff;
+            background: #ff2d00; /* Kırmızı */
             color: white;
             position: relative;
             bottom: 0;
             width: 100%;
         }
         h2 {
-            color: #007bff;
+            color: #009e2a; /* Yeşil */
         }
         ul {
             list-style-type: disc;
@@ -55,6 +61,16 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
+        }
+        .highlight {
+            background-color: #ffcc00; /* Sarı */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        audio {
+            display: block;
+            margin: 20px auto;
         }
     </style>
 </head>
@@ -83,9 +99,9 @@
         <h2>Li ser me</h2>
         <p>Derneka me di sala 2020-an de hate damezrandin. Armancê me ew e ku nirxên dîrokî û çandî yên herêma Karabağê parastin, civakî di hev re zêde bikin û pêdiviyên endamên me berdewam bikin. Derneka me, bi çalakiyan, seminaran û projeyan re çanda Karabağê tanînin û piştgirî bikin.</p>
         <h3>Armanca Me</h3>
-        <p>Çanda Karabağê û gelanên wî bi kêmasî bike.</p>
+        <p class="highlight">Çanda Karabağê û gelanên wî bi kêmasî bike.</p>
         <h3>Vîzyona Me</h3>
-        <p>Çand û zengînî yên herêma Karabağê di nav cîhan de nas bikin.</p>
+        <p class="highlight">Çand û zengînî yên herêma Karabağê di nav cîhan de nas bikin.</p>
     </section>
 
     <section id="etkinlikler">
@@ -138,6 +154,16 @@
             <li><a href="#">Gelûbûnê Muzîka Azerbaycanê</a></li>
             <li><a href="#">Xwarinên Karabağê û Reçeteyên Wî</a></li>
         </ul>
+    </section>
+    
+    <!-- Arka planda müzik çalma bölümü -->
+    <section id="music">
+        <h2>Muzîk</h2>
+        <audio controls autoplay loop>
+            <source src="music.mp3" type="audio/mpeg">
+            Tarayıcınız ses dosyasını desteklemiyor.
+        </audio>
+        <p>Muzîka xweş bike!</p>
     </section>
 </div>
 
